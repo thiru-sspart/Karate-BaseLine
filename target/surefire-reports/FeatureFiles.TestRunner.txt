@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: FeatureFiles.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.699 s <<< FAILURE! - in FeatureFiles.TestRunner
+[2:11] Testing([FeatureFiles/Test] Sample API test)  Time elapsed: 0.175 s  <<< ERROR!
+com.intuit.karate.KarateException: 
+status code was: 200, expected: 400, response time in milliseconds: 144, url: https://reqres.in/api/users/2, response: 
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+classpath:FeatureFiles/Test.feature:14
+
