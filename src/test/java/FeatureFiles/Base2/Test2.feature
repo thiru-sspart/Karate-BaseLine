@@ -1,4 +1,4 @@
-Feature: Sample API test
+Feature: Sample API test2
 
   @Test
   Scenario: Test
@@ -11,6 +11,6 @@ Feature: Sample API test
   Scenario: Testing
     Given url 'https://reqres.in/api/users/2'
     When method GET
-    Then status 400
+    Then status 200
     Then print "#####Done 2st"
 
