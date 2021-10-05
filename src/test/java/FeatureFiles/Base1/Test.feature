@@ -17,11 +17,16 @@ Feature: Sample API test
     Then status 200
     Then print "#####Done 2st"
 
-    Scenario: Post Testing
+    Scenario Outline: Post Testing
       Given path '/users'
-      And def bodyofRequest = read('Sample.json')
+      And def bodyofRequest = karate.merge(<columnname> ,read('Sample.json'))
       And request bodyofRequest
       When method POST
       Then status 201
+      Then match response contains <name>
+      Examples:
+      |columnname|name|
+      |{"job": "leader"}|{ "name": "morpheus"}|
+
 
 
